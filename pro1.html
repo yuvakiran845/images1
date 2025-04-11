@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Photo Vault</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    #loginForm, #photoGallery {
+      max-width: 400px;
+      margin: auto;
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔒 Secure Photo Vault</h2>
+
+  <div id="loginForm">
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="checkLogin()">Login</button>
+    <p id="errorMsg" style="color:red;"></p>
+  </div>
+
+  <div id="photoGallery">
+    <h3>Welcome! 🎉 Here are your secret photos:</h3>
+    <img src="<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Secret Photo Vault</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #121212;
+          color: white;
+          text-align: center;
+          padding: 50px;
+        }
+    
+        #loginForm, #photoGallery {
+          max-width: 400px;
+          margin: auto;
+          background: #1f1f1f;
+          padding: 20px;
+          border-radius: 10px;
+          display: none;
+        }
+    
+        input[type="text"], input[type="password"] {
+          width: 90%;
+          padding: 10px;
+          margin: 10px 0;
+          border: none;
+          border-radius: 5px;
+        }
+    
+        button {
+          padding: 10px 20px;
+          border: none;
+          background-color: #007bff;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        img {
+          width: 100%;
+          max-width: 300px;
+          margin-top: 15px;
+          border-radius: 10px;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h2>🔒 Secure Photo Vault</h2>
+    
+      <div id="loginForm">
+        <input type="text" id="username" placeholder="Username"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <button onclick="checkLogin()">Login</button>
+        <p id="errorMsg" style="color:red;"></p>
+      </div>
+    
+      <div id="photoGallery">
+        <h3>Welcome! 🎉 Here are your secret photos:</h3>
+       <a href="#"> <img src="https://via.placeholder.com/300x200.png?text=Secret+Photo+1" alt="Photo 1"></a>
+       <a href="#"> <img src="https://via.placeholder.com/300x200.png?text=Secret+Photo+2" alt="Photo 2"></a>
+        <br><br>
+        <button onclick="logout()">Logout</button>
+      </div>
+    
+      <script>
+        // Hardcoded credentials (demo purposes only)
+        const user = "kiran";
+        const pass = "Yuvakiran@p";
+    
+        // Show login form by default
+        document.getElementById("loginForm").style.display = "block";
+    
+        function checkLogin() {
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+    
+          if (username === USER && password === PASS) {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("photoGallery").style.display = "block";
+          } else {
+            document.getElementById("errorMsg").innerText = "Incorrect username or password.";
+          }
+        }
+    
+        function logout() {
+          document.getElementById("photoGallery").style.display = "none";
+          document.getElementById("loginForm").style.display = "block";
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+          document.getElementById("errorMsg").innerText = "";
+        }
+      </script>
+    
+    </body>
+    </html>
+   <a href="pic1.jpg"><img src="pic1.jpg" alt="Photo 2"></a> 
+   <a href="pic2.jpg"> <img src="pic2.jpg" alt="Photo 2"></a>
+    <br><br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    // Hardcoded credentials (demo purposes only)
+    const USER = "kiran";
+    const PASS= "Yuvakiran@p";
+
+    // Show login form by default
+    document.getElementById("loginForm").style.display = "block";
+
+    function checkLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === USER && password === PASS) {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("photoGallery").style.display = "block";
+      } else {
+        document.getElementById("errorMsg").innerText = "Incorrect username or password.";
+      }
+    }
+
+    function logout() {
+      document.getElementById("photoGallery").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("errorMsg").innerText = "";
+    }
+  </script>
+
+</body>
+</html>
